@@ -8,10 +8,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-
+//lombok的常用注解，简化类的构建
 @Data
+//用于实现 Builder 模式，它可以为一个类生成一个内部的 Builder 类，简化对象的构建过程。
 @Builder
+//用于生成无参构造
 @NoArgsConstructor
+//用于生成全部参数的构造
 @AllArgsConstructor
 @ApiModel(description = "员工登录返回的数据格式")
 public class EmployeeLoginVO implements Serializable {

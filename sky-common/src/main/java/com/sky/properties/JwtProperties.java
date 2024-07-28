@@ -5,6 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
+//用于将配置文件（如 application.properties 或 application.yml）中的属性值绑定到 Java 对象的字段上。
 @ConfigurationProperties(prefix = "sky.jwt")
 @Data
 public class JwtProperties {
